@@ -18,6 +18,7 @@
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
+- [NodeJs](https://nodejs.org/en/)
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [Java Script](https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Aprender/CSS)

@@ -1,0 +1,23 @@
+{
+  "name": "NLW1Starter",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThiagueraBarao/NLW1-Starter.git"
+  },
+  "author": "Thiago do Carmo Nunes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThiagueraBarao/NLW1-Starter/issues"
+  },
+  "homepage": "https://github.com/ThiagueraBarao/NLW1-Starter#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.4",
+    "nunjucks": "^3.2.2"
+  }
+}
