@@ -17,33 +17,31 @@
 
         <main>
 
+            {% if total <1 %}
+                <h4>
+                    <strong> Nenhum ponto de coleta encontrado</strong>
+                </h4>
+            {% else %}
+            
             <h4>
-                <strong>2 pontos encontrados</strong>
+                <strong> {{total}} pontos encontrados</strong>
             </h4>
 
             <div class="cards">
-                <div class="card">
-                    <img src="/imgs/recycle1.jfif" alt="Colectoria" >
-                    <h1>Colectoria</h1>
-                    <h3>Resíduos Eletrônicos, Lâmpadas</h3>
-                    <p>
-                        Rio do Sul, Santa Catarina <br/>
-                        Guilherme Gemballa, Jardim América <br/>
-                        N° 260
-                    </p>
-                </div>
-
-                <div class="card">
-                    <img src="/imgs/recycle2.jfif" alt="Papersider" >
-                    <h1>Papersider</h1>
-                    <h3>Papéis e Papelão</h3>
-                    <p>
-                        Rio do Sul, Santa Catarina <br/>
-                        Guilherme Gemballa, Jardim América <br/>
-                        N° 260
-                    </p>
-                </div>
+                {% for place in places %}
+                    <div class="card">
+                        <img src="{{ place.image }}" alt="{{ place.name }}" >
+                        <h1>{{ place.name }}</h1>
+                        <h3>{{ place.items }}</h3>
+                        <p>
+                            {{ place.city }}, {{ place.state }} <br/>
+                            {{ place.address }} <br/>
+                            N° {{ place.address2 }}
+                        </p>
+                    </div>
+                {% endfor %}
             </div>
+            {% endif %}
 
         </main>
 
